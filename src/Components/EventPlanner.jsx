@@ -17,7 +17,10 @@ function EventPlanner() {
           events easily and successfully.
         </p>
 
-        <button className="get-started-button">
+        <button
+          className="get-started-button"
+          onClick={() => alert("Let's start planning your event!")}
+        >
           Get Started
         </button>
       </section>
@@ -39,6 +42,13 @@ function EventPlanner() {
           <li>Conferences</li>
           <li>Team Building</li>
           <li>Company Parties</li>
+        </ul>
+
+        <ul>
+          <h1>Social Events</h1>
+          <li>Graduation Parties</li>
+          <li>Reunions</li>
+          <li>Celebrations</li>
         </ul>
 
       </section>
@@ -86,7 +96,12 @@ function EventPlanner() {
       <section className="contact">
         <h2>Contact Us</h2>
 
-        <form>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            alert("Thank you! Your message has been submitted.");
+          }}
+        >
           <input
             type="text"
             placeholder="Your Name"
