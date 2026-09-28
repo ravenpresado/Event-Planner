@@ -90,7 +90,7 @@
   
   .submit-button {
     background-color: #f85199;
-    color: #fff;
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -108,7 +108,7 @@
   }
   
   .events_categories h1{
-    background-color: gray;
+    background-color: rgb(236, 111, 169);
     text-align: center;
   }
 .events_categories{

@@ -92,37 +92,36 @@ function EventPlanner() {
         </div>
       </section>
 
-      {/* Contact */}
-      <section className="contact">
-        <h2>Contact Us</h2>
+     {/* Contact */}
+<section className="contact">
+  <h2>Contact Us</h2>
 
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert("Thank you! Your message has been submitted.");
-          }}
-        >
-          <input
-            type="text"
-            placeholder="Your Name"
-          />
+  <form
+    onSubmit={(e) => {
+      e.preventDefault();
+      alert("Thank you! Your message has been submitted.");
+    }}
+  >
+    <input
+      type="text"
+      placeholder="Your Name"
+    />
 
-          <input
-            type="email"
-            placeholder="Your Email"
-          />
+    <input
+      type="email"
+      placeholder="Your Email"
+    />
 
-          <input
-            type="text"
-            placeholder="Your Message"
-          />
+    <input
+      type="text"
+      placeholder="Your Message"
+    />
 
-          <button type="submit">
-            Submit
-          </button>
-        </form>
-      </section>
-
+    <button type="submit" className="submit-button">
+      Submit
+    </button>
+  </form>
+</section>
     </div>
   );
 }
